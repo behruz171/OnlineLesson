@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="card-container">
+    {% for video in videos %}
+    <div class="card">
+        <img src="{{ video.img.url }}" alt="">
+        <div class="card-content">
+            <h3>{{ video.title }}</h3>
+            <p>{{ video.description }}</p>
+            <a href="{{ video.id }}" class="btn">See more</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

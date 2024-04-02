@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<h1>{{ video.title }}</h1>
+<video controls>
+    <source src="{{ video.video_file.url }}">
+    
+</video>
+{% endblock %}
