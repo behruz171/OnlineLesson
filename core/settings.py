@@ -79,9 +79,8 @@ JAZZMIN_SETTINGS = {
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    "/home/onlinelesson/static/",
+    "/var/www/static/",
 ]
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
